@@ -15,30 +15,34 @@
 			clear  : both;
 		}
 
-		div.menu {
+		header.main {
+			
+		}
+
+		nav.top {
 			padding-left : 25px;
 			margin       : 15px 0 10px;
 			background   : #e82;
 		}
 
-		div.menu ul {
+		nav.top menu {
 			list-style-type : none;
 		}
 
-		div.menu li {
+		nav.top li {
 			float        : left;
 			border-right : 1px dashed white;
 		}
 
-		div.menu li:first-child {
+		nav.top li:first-child {
 			border-left : 1px dashed white;
 		}
 
-		div.menu li:hover {
+		nav.top li:hover {
 			background  : #C72;
 		}
 
-		div.menu a {
+		nav.top a {
 			color       : white;
 			display     : block;
 			padding     : 7px 14px;
@@ -50,17 +54,19 @@
 	</style>
 </head>
 <body>
-	<div class="menu">
-		<ul>
-			<li><a href="#">home</a></li>
-			<li><a href="#">about me</a></li>
-			<li><a href="#">blog</a></li>
-			<li><a href="#">portfolio</a></li>
-			<li><a href="#">gallery</a></li>
-			<li><a href="#">contact me</a></li>
-		</ul>
-		<div class="badboy"></div>
-	</div>
+	<header class="main">
+		<nav class="top">
+			<menu>
+				<li><a href="#">home</a></li>
+				<li><a href="#">about me</a></li>
+				<li><a href="#">blog</a></li>
+				<li><a href="#">portfolio</a></li>
+				<li><a href="#">gallery</a></li>
+				<li><a href="#">contact me</a></li>
+			</menu>
+			<div class="badboy"></div>
+		</nav>
+	</header>
 	<p>Jafang dolor sit amet, consectetur adipiscing elit. Nam molestie massa nec ante sagittis ut volutpat est gravida. Phasellus eu massa justo, at adipiscing ante. Fusce lacus quam, hendrerit at condimentum ac, vehicula id mi. Nulla eu eros at turpis sodales euismod ut et lectus. Phasellus scelerisque faucibus odio at bibendum. Proin feugiat, nisi a hendrerit luctus, orci neque vestibulum mauris, at sagittis erat nisl sit amet risus. Nullam aliquet purus varius enim sollicitudin ut aliquam felis faucibus. Phasellus felis urna, fringilla non aliquet eu, eleifend in orci. Proin diam metus, posuere vitae varius vitae, luctus quis eros.</p>
 </body>
 </html>
