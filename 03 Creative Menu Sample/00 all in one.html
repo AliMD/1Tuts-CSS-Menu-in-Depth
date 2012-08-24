@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8" />
-	<title>12 HTML5 Semantic Web - Ali.MD CSS Menu In Depth</title>
+	<title>Creative Menu Sample - Ali.MD CSS Menu In Depth</title>
 	<style type="text/css">
 		* {
 			padding : 0;
@@ -34,8 +34,15 @@
 
 		nav.top li {
 			float       : left;
+			position    : relative;
 			margin-left : 20px;
-			background  : rgb(0, 172, 238);
+			background  : #00ACEE;
+
+			-webkit-transition : top 200ms;
+			-moz-transition    : top 200ms;
+			-ms-transition     : top 200ms;
+			-o-transition      : top 200ms;
+			transition         : top 200ms;
 		}
 
 		nav.top li:first-child {
@@ -43,13 +50,14 @@
 		}
 
 		nav.top li:hover {
-			
+			top : 4px;
+			text-shadow: 0px 0px 1px #FF9;
 		}
 
 		nav.top a {
 			color       : white;
 			display     : block;
-			padding     : 50px 7px 5px;
+			padding     : 50px 7px 6px;
 			font-family : "Courier New", Courier, monospace;
 			font-size   : 24px;
 			font-weight : bold;
@@ -57,19 +65,78 @@
 			text-transform  : capitalize;
 			text-decoration : none;
 		}
+
+		nav.top .triangle {
+			position : absolute;
+			border   : solid transparent;
+			border-top-color : #00ACEE;
+		}
+
+		nav.top .triangle.left {
+			right : 100%;
+			top   : 0;
+			border-width     : 84px 0 0 3px;
+		}
+
+		nav.top .triangle.right {
+			left : 100%;
+			top  : 0;
+			border-width     : 84px 4px 0 0;
+		}
+
+		nav.top .triangle.bottom {
+			left : 10px;
+			top  : 100%;
+			border-width     : 10px 4px 0 9px;
+		}
 	</style>
 </head>
 <body>
 	<header class="main">
 		<nav class="top">
 			<menu>
-				<li><a href="#">info?</a></li>
-				<li><a href="#">products*</a></li>
-				<li><a href="#">works*</a></li>
-				<li><a href="#">login!</a></li>
-				<li><a href="#">contact,</a></li>
+				<li>
+					<a href="#">
+						info?
+						<span class="triangle left"></span>
+						<span class="triangle right"></span>
+						<span class="triangle bottom"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						products*
+						<span class="triangle left"></span>
+						<span class="triangle right"></span>
+						<span class="triangle bottom"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						works°
+						<span class="triangle left"></span>
+						<span class="triangle right"></span>
+						<span class="triangle bottom"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						login!
+						<span class="triangle left"></span>
+						<span class="triangle right"></span>
+						<span class="triangle bottom"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						contact❜
+						<span class="triangle left"></span>
+						<span class="triangle right"></span>
+						<span class="triangle bottom"></span>
+					</a>
+				</li>
 			</menu>
-			<div class="badboy"></div>
+			<span class="badboy"></span>
 		</nav>
 	</header>
 </body>
