@@ -16,9 +16,9 @@ Create an [issue](https://github.com/AliMD/CSS-Menu-in-Depth/issues/) for any qu
 
 * Fork this repository and make some changes and pull request to [me](http://github.com/AliMD) ;)
 
-
 ###A 1Devs tutorial
 
 The One Developers - Education Department ( [1Schools.com](http://1schools.com) )
 
-Produced by [Ali Mihandoost](http://alimd.github.com/)
+
+Copyright (c) 2012, [Ali Mihandoost](http://ali.md/) (i@ali.md) under [MIT License](http://opensource.org/licenses/MIT).
