@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<title>SlideMenu</title>
+	<style type="text/css">
+		* {
+			padding : 0;
+			margin  : 0;
+		}
+
+		body {
+			background-color : black;
+		}
+
+		.slidemenu {
+			width  : 600px;
+			height : 300px;
+			margin : 50px auto 0;
+			box-shadow : 0 0 5px 1px #FAFAC3;
+		}
+
+		.slidemenu ul {
+			height : inherit;
+			list-style-type : none;
+		}
+
+		.slidemenu li {
+			width  : 150px;
+			height : inherit;
+			float  : left;
+		}
+
+		.slidemenu:hover li {
+			width : 50px;
+		}
+
+		.slidemenu li:hover {
+			width : 450px;
+		}
+
+	</style>
+</head>
+<body>
+	<section class="slidemenu">
+		<ul>
+			<li style="background-image:url('images/pic1.jpg');"></li>
+			<li style="background-image:url('images/pic2.jpg');"></li>
+			<li style="background-image:url('images/pic3.jpg');"></li>
+			<li style="background-image:url('images/pic4.jpg');"></li>
+		</ul>
+	</section>
+</body>
+</html>

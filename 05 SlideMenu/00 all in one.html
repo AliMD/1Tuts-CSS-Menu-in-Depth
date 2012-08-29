@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<title>SlideMenu</title>
+	<style type="text/css">
+		* {
+			padding : 0;
+			margin  : 0;
+		}
+
+		.slidemenu {
+			width    : 600px;
+			height   : 300px;
+			margin   : 50px auto 0;
+			overflow : hidden;
+		}
+
+		.slidemenu ul {
+			width  : 1000px;
+			height : inherit;
+			list-style-type : none;
+		}
+
+		.slidemenu li {
+			float  : left;
+			width  : 150px;
+			height : inherit;
+			background-repeat  : no-repeat;
+			-webkit-transition : width 500ms;
+		}
+
+		.slidemenu li:last-child {
+			padding-right : 200px;
+		}
+
+		.slidemenu:hover li{
+			width : 50px;
+		}
+
+		.slidemenu li:hover{
+			width : 450px;
+		}
+	</style>
+</head>
+<body>
+	<section class="slidemenu">
+		<ul>
+			<li style="background-image:url('images/pic1.jpg');"></li>
+			<li style="background-image:url('images/pic2.jpg');"></li>
+			<li style="background-image:url('images/pic3.jpg');"></li>
+			<li style="background-image:url('images/pic4.jpg');"></li>
+		</ul>
+	</section>
+</body>
+</html>

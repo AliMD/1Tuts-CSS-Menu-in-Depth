@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<title>02 hover</title>
+	<script type="text/javascript" src="../html5shiv.js"></script>
+	<style type="text/css">
+
+		* {
+			padding : 0;
+			margin  : 0;
+		}
+
+		section.topmenu {
+			margin-left : 50px;
+			margin-top  : 50px;
+		}
+
+		section.topmenu menu {
+			list-style-type : none;
+		}
+
+		section.topmenu li {
+			float  : left;
+			height : 44px;
+			/*border : 1px solid red; */
+			margin-left : 10px;
+			background-image : url('images/img_navsprites.gif');
+		}
+
+		section.topmenu li:first-child{
+			margin-left : 0px;
+		}
+
+		section.topmenu li.left {
+			width  : 44px;
+			background-position : -46px 0;
+		}
+
+		section.topmenu li.left:hover {
+			background-position : -46px -45px;
+		}
+
+		section.topmenu li.home {
+			width  : 46px;
+			background-position : 0 0;
+		}
+
+		section.topmenu li.home:hover {
+			background-position : 0 -45px;
+		}
+
+		section.topmenu li.right {
+			width  : 44px;
+			background-position : -90px 0;
+		}
+
+		section.topmenu li.right:hover {
+			background-position : -90px -45px;
+		}
+
+		section.topmenu a{
+
+		}
+	</style>
+</head>
+<body>
+	<header class="main">
+		<section class="topmenu">
+			<menu>
+				<li class="left"><a href="#"></a></li>
+				<li class="home"><a href="#"></a></li>
+				<li class="right"><a href="#"></a></li>
+			</menu>
+		</section>
+	</header>
+</body>
+</html>
